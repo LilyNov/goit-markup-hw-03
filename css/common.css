@@ -1,0 +1,149 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-white-color);
+  color: var(--primery-text-color);
+}
+
+/* Контейнер шапки */
+.container {
+  margin-left: auto; /*центрирование блока навигации*/
+  margin-right: auto; /*центрирование блока навигации*/
+  width: 1230px; /*задаем размер блока 1200 согласно сетки с дизайна + учитываем отступы слева и справа по 15px*/
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Логотип */
+.logo {
+  letter-spacing: 0.03em;
+}
+
+.logo-head {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.logo-foot {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.logo-studio {
+  color: #000000;
+}
+
+/* Навигация сайта */
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+.link:hover,
+.link:focus,
+.studio:hover,
+.studio:focus,
+.portfolio:hover,
+.portfolio:focus,
+.сontact:hover,
+.сontact:focus {
+  color: var(--accent-text-color);
+}
+
+.cont-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primery-text-color);
+}
+
+/* Футер */
+.page-footer {
+  background-color: #2f303a;
+  color: var(--primary-white-color);
+}
+
+.copyrigyt {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.social > .label {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.015em;
+
+  color: var(--primary-white-color);
+}
+
+.page-footer h3 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.015em;
+  color: var(--primary-white-color);
+}
+
+.page-footer .list {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.015em;
+  color: var(--primary-white-color);
+}
+
+/* .page-footer .link {
+  color: var(--primary-white-color);
+} */
+
+.button.secondary {
+  text-decoration-line: none;
+  color: var(--primary-white-color);
+}
+
+.page-header {
+  background-color: var(--primary-white-color);
+}

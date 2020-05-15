@@ -1,0 +1,106 @@
+/* цвет основной + телефон в шапке #757575 */
+/* цвет заголовков #212121 */
+/* акцент #2196F3 */
+/* белый #FFFFFF */
+/* телефон, почта футер rgba(255, 255, 255, 0.6) */
+
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+/* Герой */
+.hero {
+  background-color: rgb(198, 198, 199);
+}
+
+.hero-title {
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.button.primary {
+  min-width: 200px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+   */
+}
+
+/* Наши преимущества */
+
+.section h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.advantage .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+.doing-text {
+  background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+/* Наша команда */
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  /* text-align: center; */
+}
+
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+  /* text-align: center; */
+}
