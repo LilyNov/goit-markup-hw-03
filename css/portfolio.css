@@ -1,16 +1,10 @@
-h2 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
+.projects img {
+  display: block;
 }
 
-p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+.title-primary {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .button:hover,
@@ -35,4 +29,35 @@ p {
 }
 .list {
   list-style: none;
+}
+
+.title-projects {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.text-projects {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }

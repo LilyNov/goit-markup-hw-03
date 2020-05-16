@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --primary-white-color: #ffffff;
+  --foot-primery-color: #2f303a;
 }
 
 html {
@@ -22,14 +23,33 @@ body {
   color: var(--primery-text-color);
 }
 
-/* Контейнер шапки */
+/* Утилиты */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primery-text-color);
+}
+
 .container {
   margin-left: auto; /*центрирование блока навигации*/
   margin-right: auto; /*центрирование блока навигации*/
   width: 1230px; /*задаем размер блока 1200 согласно сетки с дизайна + учитываем отступы слева и справа по 15px*/
   padding-left: 15px;
   padding-right: 15px;
+
+  outline: 2px solid tomato;
 }
+
+.page-header {
+  background-color: var(--primary-white-color);
+}
+
 /* Логотип */
 .logo {
   letter-spacing: 0.03em;
@@ -45,6 +65,8 @@ body {
 }
 
 .logo-foot {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 22px;
   line-height: 1.18;
@@ -59,8 +81,37 @@ body {
   color: #000000;
 }
 
+/* main container */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Навигация сайта */
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+}
+
+.cont-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-nav .item + .item {
+  /* для применения св-ва только тем элементам у которых есть сосед сверху (согласно списка Li в разметке html */
+  margin-left: 50px;
+  outline: 2px solid tomato;
+}
+
+/* можно применить правило новее
+.site-nav .item:not(:last-chaild)
+margin-left: 50px; */
+
 .site-nav .link {
+  display: block; /* вертикальная геометрия не работает в строчных эл., поэтому делаем эл. строчно-блочным или блочным как в нашем случае */
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -74,12 +125,8 @@ body {
 
 .link:hover,
 .link:focus,
-.studio:hover,
-.studio:focus,
-.portfolio:hover,
-.portfolio:focus,
-.сontact:hover,
-.сontact:focus {
+.item:hover,
+.item:focus {
   color: var(--accent-text-color);
 }
 
@@ -90,19 +137,42 @@ body {
   letter-spacing: 0.02em;
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  color: var(--primery-text-color);
-}
-
 /* Футер */
 .page-footer {
-  background-color: #2f303a;
+  background-color: var(--foot-primery-color);
   color: var(--primary-white-color);
+}
+
+.address.company {
+  margin-bottom: 9px;
+  font-family: inherit;
+  font-style: normal;
+}
+
+.address .link {
+font-family: inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+}
+
+.page-footer b {
+  text-transform: uppercase;
+}
+
+.input {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 270px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background-color: var(--foot-primery-color);
 }
 
 .copyrigyt {
@@ -110,14 +180,6 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
-}
-
-.social > .label {
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: -0.015em;
-
-  color: var(--primary-white-color);
 }
 
 .page-footer h3 {
@@ -135,15 +197,23 @@ body {
   color: var(--primary-white-color);
 }
 
-/* .page-footer .link {
-  color: var(--primary-white-color);
-} */
+.hero .button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
 
-.button.secondary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+/* .button.secondary {
   text-decoration-line: none;
   color: var(--primary-white-color);
-}
-
-.page-header {
-  background-color: var(--primary-white-color);
-}
+} */

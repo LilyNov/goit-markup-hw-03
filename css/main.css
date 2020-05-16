@@ -12,8 +12,14 @@
 }
 
 /* Герой */
+
 .hero {
   background-color: rgb(198, 198, 199);
+  text-align: center;
+}
+
+.container-hero {
+  outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -24,22 +30,26 @@
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 .button.primary {
-  min-width: 200px;
   display: inline-block;
+  min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
+  text-align: center;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-text-color);
-  text-align: center;
+
   /* display: flex;
   align-items: center;
    */
@@ -47,7 +57,13 @@
 
 /* Наши преимущества */
 
+.advantage .list {
+  display: flex;
+}
+
 .section h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -56,7 +72,13 @@
   color: var(--title-text-color);
 }
 
+.section .title-primary {
+  margin: 0;
+}
+
 .advantage-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -66,6 +88,8 @@
 }
 
 .advantage .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -73,7 +97,17 @@
 }
 
 /* Чем мы занимаемся */
+
+.doing .list {
+  display: flex;
+}
+
+.doing img {
+  display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
+}
+
 .doing-text {
+  margin: 0;
   background: rgba(47, 48, 58, 0.8);
   border-radius: 0px 0px 4px 4px;
   font-weight: 700;
@@ -87,7 +121,18 @@
 }
 
 /* Наша команда */
+
+.team .list {
+  display: flex;
+}
+
+.team img {
+  display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
+}
+
 .team-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -97,10 +142,17 @@
 }
 
 .team-position {
+  margin: 0;
+  margin-bottom: 28px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   /* text-align: center; */
+}
+
+/* Постоянные клиенты */
+.customer .list {
+  display: flex;
 }
