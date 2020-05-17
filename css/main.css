@@ -165,7 +165,10 @@
   width: 278px;
   margin: 15px;
   text-align: center;
-}
+
+  background-color: #fff;
+
+
 .team img {
   display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
   padding-bottom: 30px;
