@@ -85,6 +85,7 @@
 
 .section .title-primary {
   margin: 0;
+  color: white; /* Прячу название секции */
 }
 
 .advantage-title {
