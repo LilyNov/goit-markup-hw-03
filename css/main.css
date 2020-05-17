@@ -168,6 +168,7 @@
 }
 .team img {
   display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
+  padding-bottom: 30px;
 }
 
 .team-title {
