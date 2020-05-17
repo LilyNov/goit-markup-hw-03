@@ -58,6 +58,10 @@
 
 /* Наши преимущества */
 
+.section.advantage {
+  padding-top: 94px;
+}
+
 .advantage .list {
   display: flex;
   margin: -15px;
@@ -105,6 +109,11 @@
 
 /* Чем мы занимаемся */
 
+.section.doing {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .doing .list {
   display: flex;
   margin: -15px;
@@ -122,6 +131,7 @@
 
 .doing-text {
   margin: 0;
+  padding: 27px;
   background: rgba(47, 48, 58, 0.8);
   border-radius: 0px 0px 4px 4px;
   font-weight: 700;
@@ -137,6 +147,7 @@
 /* Наша команда */
 
 .section.team {
+  padding-top: 94px;
   background-color: var(--color-bg-child);
 }
 
@@ -182,6 +193,11 @@
 }
 
 /* Постоянные клиенты */
+.section.customer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .customer .list {
   display: flex;
   justify-content: space-evenly;
