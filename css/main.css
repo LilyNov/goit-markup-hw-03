@@ -9,6 +9,7 @@
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --primary-white-color: #ffffff;
+  --color-bg-child: #f5f4fa;
 }
 
 /* Герой */
@@ -59,6 +60,12 @@
 
 .advantage .list {
   display: flex;
+  margin: -15px;
+}
+
+.advantage .item {
+  width: 278px;
+  margin: 15px;
 }
 
 .section h2 {
@@ -100,6 +107,13 @@
 
 .doing .list {
   display: flex;
+  margin: -15px;
+}
+
+.doing li {
+  width: 380px;
+  margin: 15px;
+  text-align: center;
 }
 
 .doing img {
@@ -122,10 +136,25 @@
 
 /* Наша команда */
 
-.team .list {
-  display: flex;
+.section.team {
+  background-color: var(--color-bg-child);
 }
 
+/* .section.team:nth-child(2n) {
+  background-color: var(--color-bg-child);
+} */
+/* каждой второй секции задать фон */
+
+.team .list {
+  display: flex;
+  margin: -15px;
+}
+
+.team li {
+  width: 278px;
+  margin: 15px;
+  text-align: center;
+}
 .team img {
   display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
 }
@@ -155,4 +184,5 @@
 /* Постоянные клиенты */
 .customer .list {
   display: flex;
+  justify-content: space-evenly;
 }

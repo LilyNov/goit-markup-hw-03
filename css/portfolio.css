@@ -1,10 +1,15 @@
 .projects img {
   display: block;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .title-primary {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.container-btn {
+  text-align: center;
 }
 
 .button:hover,
@@ -13,17 +18,19 @@
   background-color: var(--accent-text-color);
 }
 
-/* .button:focus {
-  color: var(--accent-text-color);
-} */
-
 .button {
+  margin-bottom: 50px;
+  width: 130px;
+  height: 38px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+
+  border-radius: 4px;
   color: var(--title-text-color);
   background: #f5f4fa;
 }
@@ -38,6 +45,7 @@
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
+  padding-left: 24px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
@@ -48,6 +56,7 @@
 
   font-weight: 400;
   font-size: 16px;
+  padding-left: 24px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
@@ -60,6 +69,8 @@
   font-size: 18px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+
+  display: none;
 }
 
 /* выстраиваем элементы в сетку 3*3 */
@@ -67,19 +78,16 @@
 .projects .list {
   display: flex;
   flex-wrap: wrap;
-
-  background-color: lightcoral;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .projects-item {
-  /* width: 380px; */
+  width: 380px;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc(
-    (100% - 60px) / 3
-  ); /* 100% ширины родителя - margin между колонками делим на 3 колонки */
-
-  background-color: lightslategrey;
+  width: calc((100% - 60px) / 3);
+  /* 100% ширины родителя минус margin между колонками (30px*) делим на 3 колонки */
 }
 
 .projects-item:nth-child(3n) {

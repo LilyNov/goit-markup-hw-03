@@ -4,6 +4,7 @@
   --accent-text-color: #2196f3;
   --primary-white-color: #ffffff;
   --foot-primery-color: #2f303a;
+  --color-bg-child:#F5F4FA;
 }
 
 html {
@@ -43,7 +44,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .page-header {
@@ -101,7 +102,7 @@ body {
 .site-nav .item + .item {
   /* для применения св-ва только тем элементам у которых есть сосед сверху (согласно списка Li в разметке html */
   margin-left: 50px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* можно применить правило новее
