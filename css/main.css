@@ -148,6 +148,7 @@
 
 .section.team {
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--color-bg-child);
 }
 
@@ -167,7 +168,7 @@
   text-align: center;
 
   background-color: #fff;
-
+}
 
 .team img {
   display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
