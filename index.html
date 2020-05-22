@@ -18,14 +18,13 @@
   <body>
     <!-- Шапка сайта -->
 
-    <header class="page-header">
-      <nav class="container main-nav">
-        <!-- Контейнер с навигацией -->
-
+    <header class="container page-header">
+      <nav class="main-nav">
         <a href="./index.html" class="logo-head link"
           ><span class="logo-web">Web&nbsp</span
           ><span class="logo-studio">Studio</span></a
         >
+        <!-- Контейнер с навигацией -->
         <ul class="site-nav list">
           <li class="item">
             <a href="" class="link current">Студия</a>
@@ -35,20 +34,20 @@
           </li>
           <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
-
-        <!-- Контейнер почта и телефон -->
-
-        <ul class="cont-nav list">
-          <li>
-            <img src="./img/mailicon.svg" alt="иконка почты" />
-            <a href="mailto" class="mail link">info@devstudio.com</a>
-          </li>
-          <li>
-            <img src="./img/phoneicon.svg" alt="иконка телефона" />
-            <a href="tel:380961111111" class="phone link">+38 096 111 11 11</a>
-          </li>
-        </ul>
       </nav>
+
+      <!-- Контейнер почта и телефон -->
+
+      <ul class="cont-nav list">
+        <li>
+          <img src="./img/mailicon.svg" alt="иконка почты" />
+          <a href="mailto" class="mail link">info@devstudio.com</a>
+        </li>
+        <li class="item">
+          <img src="./img/phoneicon.svg" alt="иконка телефона" />
+          <a href="tel:380961111111" class="phone link">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
 
     <main>
@@ -111,29 +110,29 @@
         <div class="container doing">
           <h2>Чем мы занимаемся</h2>
           <ul class="list">
-            <li>
+            <li class="item">
               <img
                 src="./img/nout.jpg"
                 alt="Ноутбук"
-                width="380"
+                width="370"
                 height="294"
               />
               <p class="doing-text">Десктопные приложения</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./img/mobile.jpg"
                 alt="Мобильный телефон"
-                width="380"
+                width="370"
                 height="294"
               />
               <p class="doing-text">Мобильные приложения</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./img/comp.jpg"
                 alt="Монитор компьютера"
-                width="380"
+                width="370"
                 height="294"
               />
               <p class="doing-text">Дизайнерские решения</p>
@@ -153,7 +152,7 @@
               <img
                 src="./img/team-card-1.jpg"
                 alt="Фото члена команды"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="team-title">John Smith</h3>
@@ -187,7 +186,7 @@
               <img
                 src="./img/team-card-2.jpg"
                 alt="Фото члена команды"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="team-title">Marta Stewart</h3>
@@ -221,7 +220,7 @@
               <img
                 src="./img/team-card-3.jpg"
                 alt="Фото члена команды"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="team-title">Robert Jakis</h3>
@@ -255,7 +254,7 @@
               <img
                 src="./img/team-card-4.jpg"
                 alt="Фото члена команды"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="team-title">Martin Doe</h3>
@@ -332,68 +331,69 @@
     <!-- Футер -->
     <footer class="page-footer">
       <div class="container">
-        <div class="foot-child">
-          <a href="./index.html" class="logo-foot link"
-            ><span class="logo-web">Web&nbsp</span
-            ><span class="logo-studio">Studio</span></a
-          >
-        </div>
+        <div class="flex">
+          <div class="foot-child">
+            <a href="./index.html" class="logo-foot link"
+              ><span class="logo-web">Web&nbsp</span
+              ><span class="logo-studio">Studio</span></a
+            >
 
-        <!-- Контактная информация -->
-        <div>
-          <address class="address company">
-            г. Киев, пр-т Леси Украинки, 26
-          </address>
-          <address class="address">
-            <a href="mailto" class="link">info@devstudio.com</a> <br />
-            <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
-          </address>
-        </div>
+            <!-- Контактная информация -->
 
-        <div class="foot-child">
-          <b>присоединяйтесь</b>
-          <!-- Соц ссылки -->
-          <div class="social">
-            <ul class="list">
-              <li>
-                <a
-                  href="http://instagram.com/"
-                  aria-label="Ссылка на instagram"
-                  class="link"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://twitter.com/"
-                  aria-label="Ссылка на twitter"
-                  class="link"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://facebook.com/"
-                  aria-label="Ссылка на facebook"
-                  class="link"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://linkedin.com/"
-                  aria-label="Ссылка на linkedin"
-                  class="link"
-                  >Linkedin</a
-                >
-              </li>
-            </ul>
+            <address class="address company">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <address class="address">
+              <a href="mailto" class="link">info@devstudio.com</a> <br />
+              <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+            </address>
           </div>
-        </div>
-        <div class="foot-child">
-          <b>подпишитесь на рассылку</b>
-          <input type="text" class="input" placeholder="E-mail" />
-          <a href="" class="button primary">Подписаться</a>
+
+          <div class="foot-link">
+            <b>присоединяйтесь</b>
+            <!-- Соц ссылки -->
+            <div class="social">
+              <ul class="list">
+                <li>
+                  <a
+                    href="http://instagram.com/"
+                    aria-label="Ссылка на instagram"
+                    class="link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://twitter.com/"
+                    aria-label="Ссылка на twitter"
+                    class="link"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://facebook.com/"
+                    aria-label="Ссылка на facebook"
+                    class="link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://linkedin.com/"
+                    aria-label="Ссылка на linkedin"
+                    class="link"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot-child">
+            <b>подпишитесь на рассылку</b>
+            <input type="text" class="input" placeholder="E-mail" />
+            <a href="" class="button primary">Подписаться</a>
+          </div>
         </div>
 
         <!-- Копирайт -->

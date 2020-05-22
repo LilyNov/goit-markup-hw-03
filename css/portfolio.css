@@ -1,5 +1,5 @@
 .projects img {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   display: block;
   border-radius: 5px 5px 0px 0px;
 }
@@ -11,6 +11,7 @@
 }
 
 .container-btn {
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -21,10 +22,11 @@
 }
 
 .button {
-  margin-bottom: 50px;
-  width: 130px;
-  height: 38px;
+  margin-right: 8px;
+  /* width: 130px;
+  height: 38px; */
 
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -32,10 +34,16 @@
   text-align: center;
   letter-spacing: 0.03em;
 
+  border: transparent;
   border-radius: 4px;
   color: var(--title-text-color);
   background: #f5f4fa;
 }
+
+.button:nth-child(5n) {
+  margin: 0;
+}
+
 .list {
   list-style: none;
 }

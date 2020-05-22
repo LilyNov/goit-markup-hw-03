@@ -14,6 +14,14 @@
 
 /* Герой */
 
+.section.hero {
+  background-color: rgba(47, 48, 58, 0.8);
+  background-image: url(../img/portfolio/business-9.jpg);
+  /* background-image: right 600px bottom 200px; */
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
 .hero {
   background-color: rgb(198, 198, 199);
   text-align: center;
@@ -24,18 +32,20 @@
 }
 
 .hero-title {
-  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 46px;
+  padding-top: 200px;
+
   color: var(--primary-white-color);
-  text-align: center;
+
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  margin-top: 0;
-  margin-bottom: 46px;
 }
 
-.button.primary {
+.hero .button {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
@@ -48,12 +58,8 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
-
-  /* display: flex;
-  align-items: center;
-   */
 }
 
 /* Наши преимущества */
@@ -85,7 +91,7 @@
 
 .section .title-primary {
   margin: 0;
-  color: white; /* Прячу название секции */
+  display: none; /* Прячу название секции */
 }
 
 .advantage-title {
@@ -99,7 +105,7 @@
   color: var(--title-text-color);
 }
 
-.advantage .text {
+.advantage p {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -117,13 +123,20 @@
 
 .doing .list {
   display: flex;
-  margin: -15px;
 }
 
-.doing li {
-  width: 380px;
-  margin: 15px;
+.doing .item {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
   text-align: center;
+}
+
+.doing .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.doing .item:nth-child(3n) {
+  margin-bottom: 0;
 }
 
 .doing img {
@@ -153,27 +166,25 @@
   background-color: var(--color-bg-child);
 }
 
-/* .section.team:nth-child(2n) {
-  background-color: var(--color-bg-child);
-} */
-/* каждой второй секции задать фон */
-
 .team .list {
   display: flex;
-  margin: -15px;
-}
-
-.team li {
-  width: 278px;
-  margin: 15px;
-  text-align: center;
-
-  background-color: #fff;
 }
 
 .team img {
   display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.team .list li {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  text-align: center;
+  background-color: tomato;
+}
+
+.team .list.icon {
+  justify-content: center;
 }
 
 .team-title {
@@ -184,7 +195,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  /* text-align: center; */
 }
 
 .team-position {
@@ -195,7 +205,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
-  /* text-align: center; */
 }
 
 /* Постоянные клиенты */
@@ -207,4 +216,15 @@
 .customer .list {
   display: flex;
   justify-content: space-evenly;
+}
+
+.customer .list li {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 6);
+
+  border: 2px solid tomato;
+}
+
+.customer .list li {
+  text-align: center;
 }
