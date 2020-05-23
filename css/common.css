@@ -143,9 +143,9 @@ margin-left: 50px; */
 }
 
 .link:hover,
-.link:focus,
-.item.nav:hover,
-.item.nav:focus {
+.link:focus
+/* .item.nav:hover,
+.item.nav:focus */ {
   color: var(--accent-text-color);
 }
 

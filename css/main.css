@@ -73,12 +73,19 @@
 
 .advantage .list {
   display: flex;
-  margin: -15px;
 }
 
 .advantage .item {
-  width: 278px;
-  margin: 15px;
+  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+}
+
+.advantage .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantage .item:nth-child(4n) {
+  margin-bottom: 0;
 }
 
 .section h2 {
@@ -219,7 +226,7 @@
   justify-content: space-evenly;
 }
 
-.customer .list li {
+.customer li {
   margin-right: 30px;
   width: calc((100% - 60px) / 6);
   border: 1px solid #afb1b8;
@@ -234,8 +241,7 @@
   padding-bottom: 20px;
 }
 
-.customer .list li:hover {
-  color: var(--accent-text-color);
+.customer li:hover,
+.customer li:focus {
+  border: 1px solid var(--accent-text-color);
 }
-
-color: var(--accent-text-color);
