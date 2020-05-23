@@ -252,6 +252,11 @@ margin-left: 50px; */
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+
+.foot-follow .img-btn {
+  margin-left: 10px;
+}
+
 .copyrigyt {
   margin-top: 0;
   margin-bottom: 0;
