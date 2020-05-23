@@ -15,13 +15,13 @@
 /* Герой */
 
 .section.hero {
-  background-color: rgba(47, 48, 58, 0.8);
   background-image: url(../img/hero/hero-img.jpg);
-  /* background-image: right 600px bottom 200px; */
-  background-repeat: repeat-x;
   background-size: cover;
 }
 
+.bg {
+  background-color: rgba(47, 48, 58, 0.8);
+}
 .hero {
   background-color: rgb(198, 198, 199);
   text-align: center;
@@ -47,13 +47,14 @@
 
 .hero .button {
   display: inline-block;
+  margin-bottom: 200px;
   min-width: 200px;
-  border-radius: 4px;
   padding: 10px 32px;
   text-align: center;
 
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
+  border-radius: 4px;
 
   text-decoration: none;
   font-weight: 700;
