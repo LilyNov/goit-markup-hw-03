@@ -43,12 +43,25 @@ body {
   /* outline: 2px solid tomato; */
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* Шапка сайта */
 
 .page-header {
   display: flex;
+  justify-content: space-between;
   background-color: var(--primary-white-color);
-  align-items: center;
+
+  border-bottom: 1px solid #ececec;
 }
 
 /* Логотип */
@@ -78,7 +91,7 @@ body {
   color: #2196f3;
 }
 
-.logo-studio {
+.logo-nav {
   color: #000000;
 }
 
@@ -97,10 +110,11 @@ body {
 .cont-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .cont-nav > .item {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .site-nav .item + .item {
@@ -145,16 +159,26 @@ margin-left: 50px; */
 /* Футер */
 
 .page-footer {
-  display: flex;
-  align-items: center;
-
+  min-height: 253px;
   background-color: var(--foot-primery-color);
   color: var(--primary-white-color);
 }
 
-.page-footer .flex {
+.page-footer .container.info {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+
+.logo-foot {
+  color: var(--primary-white-color);
+}
+
+.logo-foot.link {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .address.company {
@@ -169,12 +193,18 @@ margin-left: 50px; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
 
   letter-spacing: 0.03em;
 }
 
+.address .link.mail {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
 .page-footer b {
+  display: inline-block;
+  margin-bottom: 21px;
   text-transform: uppercase;
 }
 
@@ -184,6 +214,9 @@ margin-left: 50px; */
   width: 270px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   background-color: var(--foot-primery-color);
 }
@@ -202,6 +235,7 @@ margin-left: 50px; */
   letter-spacing: -0.015em;
   color: var(--primary-white-color);
 }
+
 .button.primary {
   display: inline-block;
   min-width: 200px;
@@ -219,6 +253,12 @@ margin-left: 50px; */
   letter-spacing: 0.06em;
 }
 .copyrigyt {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.03em;
