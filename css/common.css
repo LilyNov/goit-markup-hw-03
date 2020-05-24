@@ -172,6 +172,12 @@ margin-left: 50px; */
   padding-bottom: 28px;
 }
 
+.page-footer .address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .logo-foot {
   color: var(--primary-white-color);
 }
@@ -206,6 +212,9 @@ margin-left: 50px; */
   display: inline-block;
   margin-bottom: 21px;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1ю14;
+  letter-spacing: 0.03em;
 }
 
 .input {
