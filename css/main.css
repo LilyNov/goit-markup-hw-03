@@ -181,6 +181,7 @@
   display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
   margin-bottom: 30px;
 }
+
 .team .item {
   background-color: var(--primary-white-color);
   border-radius: 4px;
@@ -215,6 +216,12 @@
   justify-content: space-evenly;
 }
 
+.team .list img:hover {
+  filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%)
+    saturate(200%) saturate(200%) saturate(147.75%) hue-rotate(202deg)
+    brightness(97%) contrast(96%);
+}
+
 /* Постоянные клиенты */
 .section.customer {
   padding-top: 94px;
@@ -239,6 +246,12 @@
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.customer .img:hover {
+  filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%)
+    saturate(200%) saturate(200%) saturate(147.75%) hue-rotate(202deg)
+    brightness(97%) contrast(96%);
 }
 
 .customer li:hover,
