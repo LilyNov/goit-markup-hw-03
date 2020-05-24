@@ -142,10 +142,14 @@ margin-left: 50px; */
   color: var(--accent-text-color);
 }
 
-.link:hover,
-.link:focus
-/* .item.nav:hover,
-.item.nav:focus */ {
+.site-nav .link:hover,
+.site-nav .link:focus,
+.cont-nav .link:hover,
+.cont-nav .link:focus,
+.address > .link:hover,
+.address > .link:focus,
+.foot-link .link:hover,
+.foot-link .link:focus {
   color: var(--accent-text-color);
 }
 

@@ -1,3 +1,7 @@
+.projects-item > .link {
+  display: block;
+}
+
 .projects img {
   margin-bottom: 20px;
   display: block;
@@ -26,11 +30,13 @@
   background-color: var(--accent-text-color);
 }
 
-.button {
+.container-btn li {
   margin-right: 8px;
-  /* width: 130px;
+}
+/* width: 130px;
   height: 38px; */
 
+.button {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -45,11 +51,12 @@
   background: #f5f4fa;
 }
 
-.button:nth-child(5n) {
-  margin: 0;
+.container-btn li:nth-child(5n) {
+  margin-right: 0;
 }
 
 .title-projects {
+  margin-top: 0;
   margin-bottom: 4px;
 
   color: var(--title-text-color);
